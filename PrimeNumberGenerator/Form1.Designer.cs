@@ -38,6 +38,11 @@
             this.iterationCountLabel = new System.Windows.Forms.Label();
             this.leadtime = new System.Windows.Forms.Label();
             this.iterationCountForm = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.checkedPrimeNumber)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,7 +52,7 @@
             this.checkPrimeButton.Name = "checkPrimeButton";
             this.checkPrimeButton.Size = new System.Drawing.Size(173, 23);
             this.checkPrimeButton.TabIndex = 1;
-            this.checkPrimeButton.Text = "Проверить на простоту";
+            this.checkPrimeButton.Text = "Факторизация Ферма";
             this.checkPrimeButton.UseVisualStyleBackColor = true;
             this.checkPrimeButton.Click += new System.EventHandler(this.checkPrimeButton_Click);
             // 
@@ -140,11 +145,66 @@
             this.iterationCountForm.TabIndex = 10;
             this.iterationCountForm.Text = "428";
             // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(9, 165);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(322, 23);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Число a+b: ";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(9, 198);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(322, 23);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Число a-b: ";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(9, 230);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(322, 23);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Число a:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(9, 262);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(322, 23);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "Число b: ";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(9, 295);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(322, 23);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Колличество иттераций:";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(610, 172);
+            this.ClientSize = new System.Drawing.Size(610, 387);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.iterationCountForm);
             this.Controls.Add(this.leadtime);
             this.Controls.Add(this.iterationCountLabel);
@@ -174,6 +234,11 @@
         private System.Windows.Forms.Label iterationCountLabel;
         private System.Windows.Forms.Label leadtime;
         private System.Windows.Forms.Label iterationCountForm;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
 
